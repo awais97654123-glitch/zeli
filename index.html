@@ -147,7 +147,7 @@
     <a href="#/bags" class="nav-link" data-nav-link data-page="bags">Bags & Purses</a>
     <a href="#/runway" class="nav-link" data-nav-link data-page="runway">Runway</a>
     <a href="#/atelier" class="nav-link" data-nav-link data-page="atelier">Shoe Atelier</a>
-    <a href="#/catalog" class="nav-link" data-nav-link data-page="catalog" id="nav-catalog-btn">All Products (24)</a>
+    <a href="#/catalog" class="nav-link" data-nav-link data-page="catalog" id="nav-catalog-btn">All Products (28)</a>
   </nav>
 
   <div class="header-right-actions">
@@ -235,7 +235,7 @@
     <a href="#/catalog" class="mobile-nav-item" data-nav-link data-page="catalog">
       <span class="mob-icon">▦</span>
       <span class="mob-label">All Products</span>
-      <span class="mob-tag">24 Items</span>
+      <span class="mob-tag">28 Items</span>
     </a>
     <a href="#/track" class="mobile-nav-item" data-nav-link data-page="track">
       <span class="mob-icon">📦</span>
@@ -274,38 +274,16 @@
     <p class="orbit-main-sub">Explore the architectural ZELI Orbit runner in full rotation. Tumbled Italian calfskin, sculpted shock-absorbing midsoles, and zero-gravity runway ergonomics.</p>
   </div>
 
-  <!-- Featured 4K Video Showcase Section -->
-  <div class="orbit-video-showcase-container">
-    <div class="orbit-video-card">
-      <div class="orbit-video-badge">
-        <span class="live-dot"></span>
-        <span>ATELIER VIDEO CAPTURE · REAL-TIME ROTATION</span>
-      </div>
-      <video id="zeli-orbit-video-player" class="orbit-video-player" playsinline loop muted preload="metadata" poster="https://reel-ref-try-the-look.vercel.app/assets/source-tatum-5-orbit-copy.webp">
-        <source src="/assets/zeli-orbit-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="orbit-video-ctrl-bar">
-        <div class="orbit-video-meta">
-          <strong>ZELI Orbit 01 Low Top</strong>
-          <span>Ref. ZL-ORB-26 · 4K Studio Render</span>
-        </div>
-        <div class="orbit-video-btns">
-          <button type="button" class="orbit-vctrl-btn" id="orbit-vid-play-btn" title="Play or pause video">
-            <svg id="orbit-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            <span id="orbit-play-label">Pause</span>
-          </button>
-          <button type="button" class="orbit-vctrl-btn" id="orbit-vid-mute-btn" title="Toggle audio">
-            <svg id="orbit-mute-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
-            <span id="orbit-mute-label">Unmute</span>
-          </button>
-          <button type="button" class="orbit-vctrl-btn" id="orbit-vid-fs-btn" title="Fullscreen view">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-            <span>Expand</span>
-          </button>
-        </div>
+  <!-- Interactive 3D Orbit Live Header Banner -->
+  <div class="orbit-interactive-banner" style="margin:24px 0 36px;padding:24px 28px;background:#fcfcfc;border:1px solid #e8e8e8;border-radius:12px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span class="live-dot" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#e8552b;box-shadow:0 0 10px rgba(232,85,43,0.5);animation:pulse 2s infinite;"></span>
+      <div>
+        <strong style="display:block;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;color:#151413;">Live 3D Footwear Orbit Engine Active</strong>
+        <span style="font-size:12px;color:#666;">Drag the knurled chrome wheel below to interactively rotate 7 limited editions in 3D space.</span>
       </div>
     </div>
+    <a href="#shoe-orbit-section" class="orbit-link-btn" onclick="document.getElementById('shoe-orbit-section')?.scrollIntoView({behavior:'smooth'});" style="padding:10px 18px;background:#151413;color:#fff;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border-radius:6px;text-decoration:none;">Control Orbit Wheel ↓</a>
   </div>
 
   <!-- Orbit Technical Specifications Highlights -->
@@ -9119,20 +9097,22 @@ html.so-lock, html.so-lock body { overflow: hidden; }
     <div class="catalog-modal-head">
       <div>
         <h3 style="margin:0 0 4px;font-size:18px;font-weight:800;letter-spacing:0.04em;">ZELI Streetwear & Footwear Atelier</h3>
-        <p style="margin:0;font-size:12px;color:#777;">Browse our complete ready-to-wear runway collection and limited edition footwear (24 pieces).</p>
+        <p style="margin:0;font-size:12px;color:#777;">Browse our complete ready-to-wear runway collection and limited edition footwear (28 pieces).</p>
       </div>
       <button type="button" class="app-modal__close" onclick="document.getElementById('dialog-catalog').close()">×</button>
     </div>
 
     <!-- Category filter buttons -->
     <div class="catalog-category-bar">
-      <button type="button" class="cat-filter-btn is-active" onclick="window.filterCatalogCategory('All', this)">All Pieces (24)</button>
-      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Shoes', this)">Shoes & Sneakers (10)</button>
-      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Hoodies', this)">Hoodies & Knitwear (4)</button>
-      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Outerwear', this)">Outerwear & Jackets (3)</button>
-      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Tops', this)">T-Shirts & Tops (4)</button>
-      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Pants', this)">Pants & Trousers (3)</button>
-      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Bags', this)">Bags & Accessories (3)</button>
+      <button type="button" class="cat-filter-btn is-active" onclick="window.filterCatalogCategory('All', this)">All Pieces (28)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('T-Shirts', this)">T-Shirts (4)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Shirts', this)">Shirts (4)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Hoodies', this)">Hoodies (4)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Sweaters', this)">Sweaters (4)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Coats', this)">Coats & Outerwear (6)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Shoes', this)">Shoes & Footwear (7)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Bags', this)">Bags & Purses (4)</button>
+      <button type="button" class="cat-filter-btn" onclick="window.filterCatalogCategory('Pants', this)">Pants (2)</button>
     </div>
 
     <!-- Product Grid -->
